@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DalusyDev - Belajar Pemrograman Modern</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>Dalusy<span>Dev</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tutorialDropdown" role="button" data-bs-toggle="dropdown">
+                            Tutorial
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-html5 text-danger me-2"></i>HTML & CSS</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-js-square text-warning me-2"></i>JavaScript</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-php text-primary me-2"></i>PHP</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-python text-info me-2"></i>Python</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-database me-2"></i>Database</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Panduan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="detail-blog.html">Detail Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-primary me-2">Masuk</a>
+                    <a href="#" class="btn btn-primary">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Belajar <span>Pemrograman</span> dengan Cara Modern</h1>
+                    <p class="hero-subtitle">Tempat belajar pemrograman interaktif dengan konsep praktis dan contoh nyata. Mulai dari dasar hingga mahir dalam berbagai bahasa pemrograman.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-primary btn-lg px-4">Mulai Belajar Gratis</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg px-4">
+                            <i class="fas fa-play-circle me-2"></i>Lihat Demo
+                        </a>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center">
+                        <div class="d-flex">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle border border-3 border-white" width="40" height="40" alt="User">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle border border-3 border-white ms-n2" width="40" height="40" alt="User">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" class="rounded-circle border border-3 border-white ms-n2" width="40" height="40" alt="User">
+                        </div>
+                        <div class="ms-3">
+                            <p class="mb-0 small fw-bold">Bergabung dengan 10.000+ Developer</p>
+                            <div class="text-warning small">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-dark ms-1">4.9/5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Belajar Pemrograman" class="hero-img img-fluid floating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Mengapa Belajar di DalusyDev?</h2>
+                    <p class="text-muted">Kami menyediakan pengalaman belajar pemrograman yang berbeda dengan yang lain</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Konten Modern</h4>
+                        <p class="text-muted">Materi selalu diperbarui dengan teknologi dan praktik terbaru di industri.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Belajar Interaktif</h4>
+                        <p class="text-muted">Sistem belajar dengan editor kode langsung di browser tanpa setup.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Project Nyata</h4>
+                        <p class="text-muted">Belajar melalui proyek nyata yang bisa ditambahkan ke portofolio.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Komunitas Aktif</h4>
+                        <p class="text-muted">Diskusi dengan ribuan developer lainnya dan dapatkan bantuan ketika stuck.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Tutorial Terbaru</h2>
+                    <p class="text-muted">Pelajari teknologi terbaru dengan tutorial praktis dan mudah dipahami</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-outline-primary">Lihat Semua Tutorial <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Tutorial 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tutorial">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="card-img-top" alt="Tutorial Image">
+                        <div class="card-body">
+                            <span class="badge-category"><i class="fab fa-react me-2"></i>React JS</span>
+                            <h5 class="card-title">Membangun Aplikasi Todo dengan React Hooks</h5>
+                            <p class="card-text">Pelajari cara membuat aplikasi todo list interaktif menggunakan React Hooks dan localStorage.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author">
+                                    <small class="text-muted">John Doe</small>
+                                </div>
+                                <small class="text-muted">3 hari lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tutorial 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tutorial">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Tutorial Image">
+                        <div class="card-body">
+                            <span class="badge-category"><i class="fab fa-python me-2"></i>Python</span>
+                            <h5 class="card-title">Data Science dengan Pandas dan NumPy</h5>
+                            <p class="card-text">Panduan lengkap analisis data menggunakan library populer Python untuk pemula.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author">
+                                    <small class="text-muted">Jane Smith</small>
+                                </div>
+                                <small class="text-muted">1 minggu lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tutorial 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tutorial">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" class="card-img-top" alt="Tutorial Image">
+                        <div class="card-body">
+                            <span class="badge-category"><i class="fab fa-js me-2"></i>JavaScript</span>
+                            <h5 class="card-title">Mastering Async/Await di JavaScript</h5>
+                            <p class="card-text">Memahami asynchronous programming di JavaScript dengan pendekatan modern.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author">
+                                    <small class="text-muted">Michael Brown</small>
+                                </div>
+                                <small class="text-muted">2 minggu lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Kategori Populer</h2>
+                    <p class="text-muted">Jelajahi berbagai kategori tutorial yang tersedia</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="card category-card text-center text-decoration-none h-100 border-0">
+                        <div class="card-body p-3">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fab fa-html5 fa-3x text-danger"></i>
+                            </div>
+                            <h6 class="mb-0">HTML/CSS</h6>
+                            <small class="text-muted">120 Tutorial</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="card category-card text-center text-decoration-none h-100 border-0">
+                        <div class="card-body p-3">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fab fa-js fa-3x text-warning"></i>
+                            </div>
+                            <h6 class="mb-0">JavaScript</h6>
+                            <small class="text-muted">85 Tutorial</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="card category-card text-center text-decoration-none h-100 border-0">
+                        <div class="card-body p-3">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fab fa-react fa-3x text-info"></i>
+                            </div>
+                            <h6 class="mb-0">React</h6>
+                            <small class="text-muted">45 Tutorial</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="card category-card text-center text-decoration-none h-100 border-0">
+                        <div class="card-body p-3">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fab fa-node-js fa-3x text-success"></i>
+                            </div>
+                            <h6 class="mb-0">Node.js</h6>
+                            <small class="text-muted">35 Tutorial</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="card category-card text-center text-decoration-none h-100 border-0">
+                        <div class="card-body p-3">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fab fa-python fa-3x text-primary"></i>
+                            </div>
+                            <h6 class="mb-0">Python</h6>
+                            <small class="text-muted">60 Tutorial</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <a href="#" class="card category-card text-center text-decoration-none h-100 border-0">
+                        <div class="card-body p-3">
+                            <div class="icon-wrapper mb-3">
+                                <i class="fas fa-database fa-3x text-secondary"></i>
+                            </div>
+                            <h6 class="mb-0">Database</h6>
+                            <small class="text-muted">40 Tutorial</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center position-relative">
+                    <h2 class="newsletter-title">Tetap Update dengan Tutorial Terbaru</h2>
+                    <p class="mb-5 opacity-75">Daftar newsletter kami dan dapatkan notifikasi ketika tutorial baru dirilis</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control newsletter-input" placeholder="Masukkan email Anda">
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn newsletter-btn w-100">Daftar</button>
+                        </div>
+                    </form>
+                    <p class="small mt-3 opacity-75">Kami tidak akan mengirim spam. Berhenti berlangganan kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-code me-2"></i>DalusyDev
+                    </a>
+                    <p class="footer-about">
+                        DalusyDev adalah platform belajar pemrograman modern yang menyediakan tutorial praktis dan proyek nyata untuk membantu Anda menjadi developer profesional.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h5>Tutorial</h5>
+                        <ul>
+                            <li><a href="#">HTML & CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">Python</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Cheatsheet</a></li>
+                            <li><a href="#">E-book Gratis</a></li>
+                            <li><a href="#">Video Tutorial</a></li>
+                            <li><a href="#">Komunitas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h5>Perusahaan</h5>
+                        <ul>
+                            <li><a href="#">Tentang Kami</a></li>
+                            <li><a href="#">Karir</a></li>
+                            <li><a href="#">Kontak</a></li>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                            <li><a href="#">Syarat & Ketentuan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-links">
+                        <h5>Bantuan</h5>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Pusat Bantuan</a></li>
+                            <li><a href="#">Forum Diskusi</a></li>
+                            <li><a href="#">Status Layanan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2023 DalusyDev. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">Dibuat dengan <i class="fas fa-heart text-danger"></i> di Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Tombol Back to Top -->
+    <a href="#top" id="backToTop" class="back-to-top btn btn-primary btn-lg" title="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

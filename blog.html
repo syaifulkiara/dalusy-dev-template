@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DalusyDev - Belajar Pemrograman Modern</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>Dalusy<span>Dev</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tutorialDropdown" role="button" data-bs-toggle="dropdown">
+                            Tutorial
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-html5 text-danger me-2"></i>HTML & CSS</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-js-square text-warning me-2"></i>JavaScript</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-php text-primary me-2"></i>PHP</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-python text-info me-2"></i>Python</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-database me-2"></i>Database</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Panduan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="detail-blog.html">Detail Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-primary me-2">Masuk</a>
+                    <a href="#" class="btn btn-primary">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Halaman Blog -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Blog Terbaru</h2>
+            <div class="row g-4">
+                <!-- Card Blog 1 -->
+                <div class="col-md-6 col-lg-4">
+                  <a href="detail-blog.html" class="text-decoration-none text-dark">
+                    <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                      <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" class="card-img-top" alt="Tutorial React"/>
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Membangun Aplikasi Todo dengan React Hooks</h5>
+                        <p class="card-text flex-grow-1">Pelajari cara membuat aplikasi todo list interaktif menggunakan React Hooks dan localStorage.</p>
+                        <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                            <small>John Doe</small>
+                          </div>
+                          <small class="text-muted">3 hari lalu</small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Card Blog 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="detail-blog.html" class="text-decoration-none text-dark">
+                        <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Data Science"/>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Data Science dengan Pandas dan NumPy</h5>
+                                <p class="card-text flex-grow-1">Panduan lengkap analisis data menggunakan library populer Python untuk pemula.</p>
+                                <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                        <small>Jane Smith</small>
+                                    </div>
+                                    <small class="text-muted">1 minggu lalu</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card Blog 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="detail-blog.html" class="text-decoration-none text-dark">
+                        <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1364&q=80" class="card-img-top" alt="JavaScript Async"/>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Mastering Async/Await di JavaScript</h5>
+                                <p class="card-text flex-grow-1">Memahami asynchronous programming di JavaScript dengan pendekatan modern.</p>
+                                <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                        <small>Michael Brown</small>
+                                    </div>
+                                    <small class="text-muted">2 minggu lalu</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card Blog 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" class="card-img-top" alt="Tutorial React"/>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Membangun Aplikasi Todo dengan React Hooks</h5>
+                            <p class="card-text flex-grow-1">Pelajari cara membuat aplikasi todo list interaktif menggunakan React Hooks dan localStorage.</p>
+                            <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                    <small>John Doe</small>
+                                </div>
+                                <small class="text-muted">3 hari lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Blog 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Data Science"/>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Data Science dengan Pandas dan NumPy</h5>
+                            <p class="card-text flex-grow-1">Panduan lengkap analisis data menggunakan library populer Python untuk pemula.</p>
+                            <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                    <small>Jane Smith</small>
+                                </div>
+                                <small class="text-muted">1 minggu lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Blog 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1364&q=80" class="card-img-top" alt="JavaScript Async"/>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mastering Async/Await di JavaScript</h5>
+                            <p class="card-text flex-grow-1">Memahami asynchronous programming di JavaScript dengan pendekatan modern.</p>
+                            <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                    <small>Michael Brown</small>
+                                </div>
+                                <small class="text-muted">2 minggu lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Blog 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" class="card-img-top" alt="Tutorial React"/>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Membangun Aplikasi Todo dengan React Hooks</h5>
+                            <p class="card-text flex-grow-1">Pelajari cara membuat aplikasi todo list interaktif menggunakan React Hooks dan localStorage.</p>
+                            <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                    <small>John Doe</small>
+                                </div>
+                                <small class="text-muted">3 hari lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Blog 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Data Science"/>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Data Science dengan Pandas dan NumPy</h5>
+                            <p class="card-text flex-grow-1">Panduan lengkap analisis data menggunakan library populer Python untuk pemula.</p>
+                            <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                    <small>Jane Smith</small>
+                                </div>
+                                <small class="text-muted">1 minggu lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Blog 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-blog h-100 border-0 bg-white rounded shadow-sm p-3">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1364&q=80" class="card-img-top" alt="JavaScript Async"/>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mastering Async/Await di JavaScript</h5>
+                            <p class="card-text flex-grow-1">Memahami asynchronous programming di JavaScript dengan pendekatan modern.</p>
+                            <div class="blog-meta mt-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author"/>
+                                    <small>Michael Brown</small>
+                                </div>
+                                <small class="text-muted">2 minggu lalu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambah card lagi sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-code me-2"></i>DalusyDev
+                    </a>
+                    <p class="footer-about">
+                        DalusyDev adalah platform belajar pemrograman modern yang menyediakan tutorial praktis dan proyek nyata untuk membantu Anda menjadi developer profesional.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h5>Tutorial</h5>
+                        <ul>
+                            <li><a href="#">HTML & CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">Python</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Cheatsheet</a></li>
+                            <li><a href="#">E-book Gratis</a></li>
+                            <li><a href="#">Video Tutorial</a></li>
+                            <li><a href="#">Komunitas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h5>Perusahaan</h5>
+                        <ul>
+                            <li><a href="#">Tentang Kami</a></li>
+                            <li><a href="#">Karir</a></li>
+                            <li><a href="#">Kontak</a></li>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                            <li><a href="#">Syarat & Ketentuan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-links">
+                        <h5>Bantuan</h5>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Pusat Bantuan</a></li>
+                            <li><a href="#">Forum Diskusi</a></li>
+                            <li><a href="#">Status Layanan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2023 DalusyDev. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">Dibuat dengan <i class="fas fa-heart text-danger"></i> di Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Tombol Back to Top -->
+    <a href="#top" id="backToTop" class="back-to-top btn btn-primary btn-lg" title="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
