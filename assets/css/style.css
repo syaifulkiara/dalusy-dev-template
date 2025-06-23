@@ -8,6 +8,7 @@
 --warning: #fbbf24;
 --danger: #f87171;
 --code-bg: #2b2d42;
+--primary-transparent: rgba(67, 97, 238, 0.1);
 }
 
 body {
@@ -21,18 +22,76 @@ line-height: 1.6;
 font-family: 'Fira Code', monospace;
 }
 
+/* Navbar lebih compact */
+.navbar {
+min-height: 60px;
+background-color: #ffffff; /* Putih bersih */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+font-weight: 700;
+color: #007BFF; /* Biru primer */
+text-decoration: none;	
+font-size: 1.25rem;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+.nav-box {
+position: relative;
+display: inline-block;
+padding: 0.5rem 1.25rem;
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+border-radius: 8px; /* Sudut lebih tumpul */
+}
+
+.nav-link:hover .nav-box {
+background-color: var(--primary-transparent); /* Warna transparan */
+color: var(--primary);
+transform: translateY(-2px);
+}
+
+.nav-link.active .nav-box {
+background-color: var(--primary-transparent);
+color: var(--primary);
+font-weight: 500;
+}
+
+/* Efek border animasi */
+.nav-box::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+border: 1.5px solid transparent;
+border-radius: 8px; /* Match dengan border-radius box */
+transition: all 0.4s ease;
+transform: scale(0.95);
+opacity: 0;
+}
+
+.nav-link:hover .nav-box::before {
+border-color: var(--primary);
+transform: scale(1);
+opacity: 0.6; /* Transparansi border */
+}
+
+.nav-link.active .nav-box::before {
+border-color: var(--primary);
+transform: scale(1);
+opacity: 0.8;
+}
+
 /* Warna dasar navbar */
 .navbar {
 background-color: #ffffff; /* Putih bersih */
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Warna brand dan teks */
-.navbar-brand {
-font-weight: 700;
-color: #007BFF; /* Biru primer */
-text-decoration: none;
-}
+
 
 .navbar-brand:hover {
 color: #0056b3; /* Biru lebih gelap saat hover */
@@ -366,6 +425,7 @@ padding: 4rem 0 2rem;
 .footer-logo {
 font-weight: 700;
 font-size: 1.8rem;
+text-decoration: none;
 color: white;
 margin-bottom: 1.5rem;
 display: inline-block;
@@ -624,4 +684,86 @@ border-radius: 8px;
 .blog-meta {
 font-size: 0.85rem;
 color: #6c757d;
+}
+
+@media (max-width: 991.98px) {
+.navbar-collapse {
+background-color: white; /* Pastikan background solid */
+padding: 1rem;
+border-radius: 0 0 10px 10px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+margin-top: 0.5rem;
+}
+
+.dropdown-menu {
+background-color: white !important; /* Force white background */
+border: none !important;
+box-shadow: none !important;
+margin-left: 1rem;
+padding-left: 1rem;
+border-left: 2px solid var(--primary) !important;
+}
+
+.nav-item {
+margin-bottom: 0.5rem;
+}
+
+.navbar-toggler:focus {
+box-shadow: 0 0 0 0.15rem rgba(67, 97, 238, 0.25);
+}
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #f8f9fa;
+}
+
+.dark-mode .navbar {
+    background-color: #2b2d42 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link,
+.dark-mode .nav-box {
+    color: #f8f9fa !important;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #2b2d42;
+    border-color: #3a3d57;
+}
+
+.dark-mode .dropdown-item {
+    color: #f8f9fa;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #3a3d57;
+}
+
+.dark-mode .search-input {
+    background-color: #2b2d42;
+    color: #f8f9fa;
+    border-color: #3a3d57;
+}
+
+.dark-mode .search-btn {
+    background-color: #3a3d57;
+    color: #f8f9fa;
+    border-color: #3a3d57;
+}
+
+
+/* Dark Mode Toggle Styling */
+.dark-mode-toggle {
+    width: 2.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.form-check-label {
+    cursor: pointer;
+    margin-left: 0.5rem;
 }
