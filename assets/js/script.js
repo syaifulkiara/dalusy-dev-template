@@ -59,3 +59,32 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+// Dark Mode Toggle Functionality
+const darkModeToggle = document.querySelector('.dark-mode-toggle');
+const body = document.body;
+
+// Check for saved user preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+    darkModeToggle.checked = true;
+}
+
+// Toggle dark mode
+darkModeToggle.addEventListener('change', function() {
+    if (this.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
+
+// Search Functionality (Example)
+document.querySelector('.search-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const searchTerm = document.querySelector('.search-input').value;
+    alert('Anda mencari: ' + searchTerm);
+    // Implement your actual search functionality here
+});
